@@ -6,7 +6,9 @@
 //
 import Foundation
 
-final class SentimentCoordinator {
+final class SentimentCoordinator: ViewModelCoordinating {
+    typealias ViewModel = SentimentViewModel
+
     private let service: SentimentAnalysisServicing
 
     init(service: SentimentAnalysisServicing = SentimentAnalysisService()) {

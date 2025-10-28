@@ -13,8 +13,8 @@ struct LiquidVisionApp: App {
     var body: some Scene {
         WindowGroup {
             LiquidVisionRootView(
-                classificationViewModel: appCoordinator.classificationViewModel,
-                sentimentViewModel: appCoordinator.sentimentViewModel
+                classificationViewModel: appCoordinator.viewModel(ClassificationViewModel.self),
+                sentimentViewModel: appCoordinator.viewModel(SentimentViewModel.self)
             )
         }
     }

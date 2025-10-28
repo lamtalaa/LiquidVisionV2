@@ -6,7 +6,9 @@
 //
 import Foundation
 
-final class ClassificationCoordinator {
+final class ClassificationCoordinator: ViewModelCoordinating {
+    typealias ViewModel = ClassificationViewModel
+
     private let classifier: ImageClassificationServicing
     private let sentimentService: SentimentAnalysisServicing
 
